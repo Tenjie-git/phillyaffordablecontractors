@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="/static/styles.css" rel="stylesheet">
+    <title>Affordable Contractors</title>
+</head>
+<body>
+    <div id="wrapper">
+        <header>
+            <h1><a href="{{ url_for('index') }}" id="return-home">Affordable Contractors</a></h1>
+        </header>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="{{ url_for('index') }}">Home</a></li>
+                <li><a href="{{ url_for('gallery') }}">Gallery</a></li>
+                <li><a href="{{ url_for('contact') }}">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+        <main>
+            <h1>Stonework</h1>
+            <a href="{{ url_for('index') }}" class="pc-button"><p>Back</p></a>
+            <h2>Information</h2>
+            <a href="{{ url_for('contact') }}"><p class="button">Contact Now</p></a>
+            <a href="{{ url_for('index') }}"><p class="button">Back</p></a>
+        </main>
+        <footer>
+            <em>Provided by Charlie Hustle Web Solutions, 2025</em><br>
+            <em>Need a site?</em>
+        </footer>
+    </div>
+    <script src="/static/script.js"></script>
+</body>
+</html>

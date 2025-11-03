@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Affordable Contractors</title>
+    <meta name="description" content="Philadelphia contractors offering affordable decks, concrete, plumbing, electrical, and full home renovations. Fair prices, expert work across Philly.">
+    <meta name="author" content="Charlie Hustle Business Solutions">
+
+    <meta property="og:title" content="Affordable Philadelphia Contractors | Decks, Concrete, Plumbing">
+    <meta property="og:description" content="Quality home renovations, decks, concrete, plumbing & electrical in Philadelphia — fair prices, pro results.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="http://www.phillyaffordablecontractors.com">
+    <meta property="og:image" content="http://www.phillyaffordablecontractors.com/og-image-contractors.jpg">
+    <meta name="twitter:card" content="summary_large_image">
+    
+    <meta name="geo.region" content="US-PA">
+    <meta name="geo.placename" content="Philadelphia">
+    <link rel="canonical" href="https://phillyaffordablecontractors.com/">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="/static/styles.css" rel="stylesheet">
+    
+</head>
+<body>
+    <div id="wrapper">
+        <header>
+            <h1><a href="{{ url_for('index') }}" id="return-home">Philadelphia Affordable Contractors</a></h1>
+        </header>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="{{ url_for('index') }}">Home</a></li>
+                <li><a href="{{ url_for('gallery') }}">Gallery</a></li>
+                <li><a href="{{ url_for('contact') }}">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+        <main>
+            <section id="about">
+                <h2>About Us</h2>
+                <p>
+                    We believe everyone deserves top-quality work without breaking the bank.
+                    Based and operating primarily in Philadelphia, we've built our reputation on honesty, craftsmanship, and
+                    a fair and affordable price.
+                </p>
+                <p>
+                    Whether it's a small or a full remodel, we take pride in every project.
+                    We treat your home like it's our own, ensuring long-lasting results that look great and stand up to time.
+                    Our goal isn't just to finish a job - it's to earn your trust for the next one.
+                </p>
+            </section>
+            <section id="services">
+                <h2>Our Services</h2>
+                <div id="service-list">
+
+                
+                    <a href="{{ url_for('decks') }}">
+                        <div class="service-about">
+                            <i class="fa-solid fa-hammer"></i>
+                            <h3>Decks</h3>
+                            <p>
+                                Enjoy the ourdoors with a custom-built deck that fits your home and lifestyle. Whether you want a space for
+                                yourself or large family gatherings, we build decks that last.
+                            </p>
+                        </div>
+                    </a>
+                    <a href="{{ url_for('stonework') }}">
+                        <div class="service-about">
+                            <i class="fa-solid fa-trowel-bricks"></i>
+                            <h3>Concrete & Stonework</h3>
+                            <p>
+                                From driveways and walkways to patios and retaining walls, we deliver solid craftsmanship at affordable rates.
+                                We take pride in smooth finishes, clean lines, and durable work that looks great for years to come.
+                            </p>
+                        </div>
+                    </a>
+                    <a href="{{ url_for('exterior') }}">
+                        <div class="service-about">
+                            <i class="fa-solid fa-house"></i>
+                            <h3>Exterior</h3>
+                            <p>
+                                Your home's exterior is the first thing people see - make it stand out. We handle siding, trim, gutters, and
+                                more to keep your property looking sharp and protected from the elements.
+                            </p>
+                        </div>
+                    </a>
+                    <a href="{{ url_for('interior') }}">
+                        <div class="service-about">
+                            <i class="fa-solid fa-couch"></i>
+                            <h3>Interior</h3>
+                            <p>
+                                Transform your indoor spaces with expert craftsmanship. From drywall and ceilings to custom finishes and trim
+                                work, we make your home's interior comfortable, stylish, and built to last.
+                            </p>
+                        </div>
+                    </a>
+                    <a href="{{ url_for('electrical') }}">
+                        <div class="service-about">
+                            <i class="fa-solid fa-bolt"></i>
+                            <h3>Electrical</h3>
+                            <p>
+                                Need a light fixture installed or wiring upgraded? We handle electrical work safely and efficiently, ensuring
+                                everything runs smoothly and up to code.
+                            </p>
+                        </div>
+                    </a>
+                    <a href="{{ url_for('plumbing') }}">
+                        <div class="service-about">
+                            <i class="fa-solid fa-faucet"></i>
+                            <h3>Plumbing</h3>
+                            <p>
+                                Whether it's fixing a leak, replacing old pipes, or installing new fixtures, we keep your home running smoothly.
+                            </p>
+                        </div>
+                    </a>
+                </div>
+            </section>
+        </main>
+        <footer>
+            <em>Provided by Charlie Hustle Web Solutions, 2025</em><br>
+            <em>Need a site?</em>
+        </footer>
+    </div>
+    <script src="/static/script.js"></script>
+</body>
+</html>

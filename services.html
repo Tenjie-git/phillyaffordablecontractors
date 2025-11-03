@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="/static/styles.css" rel="stylesheet">
+    <title>Affordable Contractors</title>
+</head>
+<body>
+    <div id="wrapper">
+        <header>
+            <h1><a href="{{ url_for('index') }}" id="return-home">Affordable Contractors</a></h1>
+        </header>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="{{ url_for('index') }}">Home</a></li>
+                <li><a href="{{ url_for('gallery') }}">Gallery</a></li>
+                <li><a href="{{ url_for('contact') }}">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+        <main>
+            <h1>Our Services</h1>
+            <div id="service-grid">
+                <a href="{{ url_for('decks') }}" class="service" style="--bg:url('/static/images/deck.jpg');">
+                    <h2>Decks</h2>
+                </a>
+                <a href="{{ url_for('stonework') }}" class="service" style="--bg:url('/static/images/stonework.jpg');">
+                    <h2>Stonework</h2>
+                </a>
+                <a href="{{ url_for('exterior') }}" class="service" style="--bg:url('/static/images/exterior.jpg');">
+                    <h2>Exterior</h2>
+                </a>
+                <a href="{{ url_for('interior') }}" class="service" style="--bg:url('/static/images/interior.jpg');">
+                    <h2>Interior</h2>      
+                </a>
+                <a href="{{ url_for('electrical') }}" class="service" style="--bg:url('/static/images/electrical.jpg');">
+                    <h2>Electrical</h2>  
+                </a>
+                <a href="{{ url_for('plumbing') }}" class="service" style="--bg:url('/static/images/plumbing.jpg');">
+                    <h2>Plumbing</h2>   
+                </a>
+            </div>
+            
+        </main>
+        
+        <footer>
+            <em>Provided by Charlie Hustle Web Solutions, 2025</em><br>
+            <em>Need a site?</em>
+        </footer>
+    </div>
+    <script src="/static/script.js"></script>
+</body>
+</html>
